@@ -3,7 +3,7 @@ import csv
 import random
 
 
-with open(r'C:\Users\yalov\OneDrive\Рабочий стол\Python\Загадки по медицине\questions.csv') as file:
+with open('questions.csv') as file:
     data = csv.DictReader(file, delimiter=';')
     a = 0
     questions_for_student = []
