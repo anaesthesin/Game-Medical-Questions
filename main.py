@@ -55,19 +55,17 @@ def victorina(root):
         while True:
             number_question = random.randint(0, len(questions_for_student)-1)
             if number_question not in past_questions:
+                number_question = random.randint(0, len(questions_for_student)-1)
                 current_question = questions_for_student[number_question]['question']
-            else:
                 break
-
     else:
         past_questions = []
         while True:
             number_question = random.randint(0, len(questions_for_doctor)-1)
             if number_question not in past_questions:
+                number_question = random.randint(0, len(questions_for_doctor)-1)
                 current_question = questions_for_doctor[number_question]['question']
-            else:
                 break
-
     question = Label(root, text=current_question)
     question.grid(column=2, row=2)
 
