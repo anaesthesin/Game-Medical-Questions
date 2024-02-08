@@ -1,2 +1,3 @@
 this first information about game
+and second line
 
